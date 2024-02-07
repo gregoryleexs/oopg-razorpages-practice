@@ -1,0 +1,129 @@
+﻿@page
+@model VirginGalactic2.Pages.Bookings.BookModel
+@{
+    ViewData["Title"] = "Book - Virgin Galactic";
+}
+
+<div>
+    <h1>Book your Tickets</h1>
+    <p>Book tickets NOW and fly to SPACE!</p>
+</div>
+<form method="post">
+    <p>
+        Name: <input type="text" asp-for="Name" /> <br />
+        Age: <input type="text" asp-for="Age" /> <br />
+        Gender:<br />
+        <input type="radio" asp-for="Gender" value="Male" /> Male <br />
+        <input type="radio" asp-for="Gender" value="Female" /> Female <br />
+        <input type="radio" asp-for="Gender" value="Other" /> Other/prefer not to say <br />
+    </p>
+
+    <p>
+        From:
+        <select asp-for="Origin">
+            @foreach (var o in Model.OriginList)
+            {
+                <option value="@o">@o</option>
+            }
+        </select>
+    </p>
+
+    <p>
+        To:
+        <select asp-for="Destination">
+            @foreach (var d in Model.DestinationList)
+            {
+                <option value="@d">@d</option>
+            }
+        </select>
+    </p>
+        
+    <p>
+        Choose Departure Date:<input type="date" asp-for="DepartureDateTime" asp-format="{0:yyyy-MM-dd}" /><br />
+    </p>
+    <p>
+        <input type="submit" asp-page-handler="ShowSeat" value="Show Seats!" />
+        <input type="submit" asp-page-handler="Reserve" value="Reserve Ticket!" />
+    </p>
+
+ 
+
+    <p>
+        <table class="table-bordered" @Model.IsHidden>
+            <tr>
+                @foreach (var i in Model.Row1List)
+                {
+                    if(i == "")
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" disabled/>@i</td>
+                    }
+                    else
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" />@i</td>
+                    }
+
+                }
+            </tr>
+            <tr>
+                @foreach (var i in Model.Row2List)
+                {
+                    if (i == "")
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" disabled />@i</td>
+                    }
+                    else
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" />@i</td>
+                    }
+
+                }
+            </tr>
+            <tr>
+                @foreach (var i in Model.Row3List)
+                {
+                    if (i == "")
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" disabled />@i</td>
+                    }
+                    else
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" />@i</td>
+                    }
+
+                }
+            </tr>
+            <tr>
+                @foreach (var i in Model.Row4List)
+                {
+                    if (i == "")
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" disabled />@i</td>
+                    }
+                    else
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" />@i</td>
+                    }
+
+                }
+            </tr>
+            <tr>
+                @foreach (var i in Model.Row5List)
+                {
+                    if (i == "")
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" disabled />@i</td>
+                    }
+                    else
+                    {
+                        <td><input type="radio" asp-for="Seat" value="@i" />@i</td>
+                    }
+
+                }
+            </tr>
+        </table>
+    </p>
+</form>
+<div asp-validation-summary="All"></div>
+<p>
+    @Model.Errors
+</p>
