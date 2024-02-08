@@ -16,6 +16,7 @@ namespace VirginGalactic2.Pages.Bookings
         {
             _context = context;
         }
+        
         [BindProperty]
         public Booking Booking { get; set; }
         public List<Booking> Bookings { get; set; }

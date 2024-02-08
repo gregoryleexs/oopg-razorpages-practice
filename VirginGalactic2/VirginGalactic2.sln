@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirginGalactic2", "VirginGalactic2.csproj", "{BAE418AE-A653-4D9F-93CA-74F60BF552F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE418AE-A653-4D9F-93CA-74F60BF552F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE418AE-A653-4D9F-93CA-74F60BF552F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE418AE-A653-4D9F-93CA-74F60BF552F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE418AE-A653-4D9F-93CA-74F60BF552F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24642FD1-E556-42DC-83C9-C8FB5305E265}
+	EndGlobalSection
+EndGlobal
