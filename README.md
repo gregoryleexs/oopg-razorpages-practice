@@ -1,4 +1,4 @@
-# oopg-console-practice
+# oopg-razorpages-practice
 An ASP.NET Razor Pages (MVC) practice question for Ngee Ann Poly Object Oriented Programming module (xxOOPG). This can be used as practice for PT2.
 ## In This Repo
 This repo contains the question PDF as well as the Visual Studio solution and source files.
