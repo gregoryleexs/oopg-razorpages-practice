@@ -1,4 +1,6 @@
 # oopg-razorpages-practice
+![Static Badge](https://img.shields.io/badge/.NET_Framework-8.0-purple)
+
 An ASP.NET Razor Pages (MVC) practice question for Ngee Ann Poly Object Oriented Programming module (xxOOPG). This can be used as practice for PT2.
 ## In This Repo
 This repo contains the question PDF as well as the Visual Studio solution and source files.
